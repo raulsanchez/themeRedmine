@@ -111,6 +111,10 @@
   #loggedas {
     margin-left: 1em;
     float: right;
+
+    &.user{
+      text-transform: capitalize;
+    }
   }
 }
 

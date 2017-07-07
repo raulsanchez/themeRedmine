@@ -529,6 +529,69 @@ $icon-danger-hover-color:            darken($brand-danger, 10%);
       &::before { content: $fa-var-key; }
     }
   }
+  %top-menu-icon {
+    @extend %fa-icon;
+
+    &::before {
+      width: 12px;
+      margin-left:10px;
+      color: $brand-accent;
+      text-align: center;
+    }
+
+    &:hover::before {
+      color: $brand-text;
+    }
+
+    &.selected::before {
+      color: $brand-text;
+    }
+  }
+  #top-menu {
+    .projects {
+      @extend %top-menu-icon;
+      &::before {
+        content: $fa-var-briefcase;
+      }
+    }
+
+    .my-page{
+      @extend %top-menu-icon;
+      &::before {
+        content: $fa-var-star-o;
+      }
+    }
+    .administration{
+      @extend %top-menu-icon;
+      &::before {
+        content: $fa-var-sliders;
+      }
+    }
+    .help{
+      @extend %top-menu-icon;
+      &::before {
+        content: $fa-var-info-circle;
+      }
+    }
+    .home{
+      @extend %top-menu-icon;
+      &::before {
+        content: $fa-var-home;
+      }
+    }
+    .my-account{
+      @extend %top-menu-icon;
+      &::before {
+        content: $fa-var-user;
+      }
+    }
+    .logout{
+      @extend %top-menu-icon;
+      &::before {
+        content: $fa-var-user;
+      }
+    }
+  }
 } @else {
   #admin-menu {
     .projects              { background-image: url("../../../images/projects.png"); }
