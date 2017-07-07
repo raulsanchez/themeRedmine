@@ -588,7 +588,7 @@ $icon-danger-hover-color:            darken($brand-danger, 10%);
     .logout{
       @extend %top-menu-icon;
       &::before {
-        content: $fa-var-user;
+        content: $fa-var-sign-out;
       }
     }
   }
